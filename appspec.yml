@@ -1,0 +1,19 @@
+version: 0.0
+os: linux
+files:
+  - source: /index.html # source code mac dinh se chay
+    destination: /var/www/html/ # thu muc chua source code
+hooks:
+  # Day la cac script de thuc hien tu dong deploy code
+  BeforeInstall:
+    - location: scripts/install_dependencies # file dung de cai cac packages cho project
+      timeout: 300
+      runas: root
+    - location: scripts/start_server # script start server
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: scripts/stop_server # script stop server
+      timeout: 300
+      runas: root
+
