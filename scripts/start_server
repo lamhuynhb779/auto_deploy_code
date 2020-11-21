@@ -1,3 +1,4 @@
+# Can start cai gi khi chay thi ghi trong day
 #!/bin/bash
 service httpd start
 

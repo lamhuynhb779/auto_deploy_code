@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /index.html # source code mac dinh se chay
+  - source: /index.html # source code mac dinh se chay. Vi du index.php, index.py, ...
     destination: /var/www/html/ # thu muc chua source code
 hooks:
   # Day la cac script de thuc hien tu dong deploy code

@@ -1,3 +1,4 @@
+# Cai cac package: php, nodejs hay java gi day thi cai trong day
 #!/bin/bash
 yum install -y httpd
 
